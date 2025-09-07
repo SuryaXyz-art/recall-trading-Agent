@@ -423,6 +423,13 @@ section {
     background: var(--background-color);
 }
 
+/* Cursor Tutorial Section */
+.cursor-tutorial {
+    background: var(--surface-color);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
 .tutorial-content {
     max-width: 900px;
     margin: 0 auto;

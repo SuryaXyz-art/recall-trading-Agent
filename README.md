@@ -31,8 +31,9 @@ A comprehensive tutorial website for building AI trading agents on Recall Networ
 
 ## 📚 Tutorial Content
 
-The website includes a complete 7-step tutorial covering:
+The website includes two comprehensive tutorials:
 
+### 🚀 Mastra Framework Tutorial (7 steps)
 1. **Prerequisites** - Required tools and API keys
 2. **Project Setup** - Creating and configuring Mastra project
 3. **Recall Trade Tool** - Building the trading tool
@@ -40,6 +41,15 @@ The website includes a complete 7-step tutorial covering:
 5. **Workflow** - Setting up the workflow
 6. **Registration** - Registering agent and workflow
 7. **Testing** - Testing the agent via dashboard
+
+### 🤖 Cursor IDE Tutorial (7 steps)
+1. **Why Cursor IDE** - AI-powered development features
+2. **Setting Up Cursor** - Installation and configuration
+3. **Project Structure** - Creating organized codebase
+4. **Building Trading Agent** - Core agent implementation
+5. **Trading Strategy** - Implementing market analysis
+6. **Testing & Debugging** - AI-assisted testing
+7. **Deployment** - Production deployment guide
 
 ## 🔧 Technical Features
 

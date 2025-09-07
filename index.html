@@ -20,7 +20,8 @@
             </div>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#tutorial" class="nav-link">Tutorial</a></li>
+                <li><a href="#tutorial" class="nav-link">Mastra Tutorial</a></li>
+                <li><a href="#cursor-tutorial" class="nav-link">Cursor Tutorial</a></li>
                 <li><a href="#competitions" class="nav-link">Competitions</a></li>
                 <li><a href="#resources" class="nav-link">Resources</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -38,9 +39,10 @@
         <div class="hero-container">
             <div class="hero-content">
                 <h1 class="hero-title">Build Your Trading Agent for Recall Network</h1>
-                <p class="hero-subtitle">Learn to create AI-powered trading agents using Mastra framework and compete in decentralized trading competitions</p>
+                <p class="hero-subtitle">Learn to create AI-powered trading agents using Mastra framework or Cursor IDE and compete in decentralized trading competitions</p>
                 <div class="hero-buttons">
-                    <a href="#tutorial" class="btn btn-primary">Start Tutorial</a>
+                    <a href="#tutorial" class="btn btn-primary">Mastra Tutorial</a>
+                    <a href="#cursor-tutorial" class="btn btn-primary">Cursor Tutorial</a>
                     <a href="https://app.recall.network/competitions" target="_blank" class="btn btn-secondary">View Competitions</a>
                 </div>
             </div>
@@ -371,6 +373,416 @@ export const mastra = new Mastra({
                             <h4>Access the Dashboard</h4>
                             <p>Navigate to <code>http://localhost:4111/agents/recallAgent/chat</code> to interact with your agent.</p>
                             <p>Try commands like: <code>"Buy $10 worth of Ether"</code> to test your trading agent.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cursor Tutorial Section -->
+    <section id="cursor-tutorial" class="cursor-tutorial">
+        <div class="container">
+            <div class="section-header">
+                <h2>Building with Cursor IDE</h2>
+                <p>Learn to build Recall Network trading agents using Cursor IDE with AI-powered development assistance</p>
+            </div>
+
+            <div class="tutorial-content">
+                <!-- Cursor Introduction -->
+                <div class="tutorial-step">
+                    <div class="step-header">
+                        <div class="step-number">1</div>
+                        <h3>Why Cursor IDE for AI Development?</h3>
+                    </div>
+                    <div class="step-content">
+                        <p>Cursor IDE is the perfect tool for building AI trading agents with its advanced AI-powered features:</p>
+                        <div class="features-grid">
+                            <div class="feature-card">
+                                <div class="feature-icon">🤖</div>
+                                <h3>AI Code Completion</h3>
+                                <p>Intelligent code suggestions and auto-completion for faster development</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">💬</div>
+                                <h3>AI Chat Integration</h3>
+                                <p>Built-in AI assistant for code explanations and debugging help</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">🔍</div>
+                                <h3>Smart Code Search</h3>
+                                <p>Natural language code search and navigation across your project</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">⚡</div>
+                                <h3>Rapid Prototyping</h3>
+                                <p>Quickly iterate and test trading strategies with AI assistance</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cursor Setup -->
+                <div class="tutorial-step">
+                    <div class="step-header">
+                        <div class="step-number">2</div>
+                        <h3>Setting Up Cursor IDE</h3>
+                    </div>
+                    <div class="step-content">
+                        <p>Get started with Cursor IDE for Recall Network development:</p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span>Installation Steps</span>
+                            </div>
+                            <pre><code class="language-bash"># Download Cursor IDE from https://cursor.sh
+# Install the application
+
+# Open Cursor and create a new project
+mkdir recall-trading-agent
+cd recall-trading-agent
+
+# Initialize with package.json
+npm init -y</code></pre>
+                        </div>
+                        <div class="info-box">
+                            <h4>Cursor IDE Features for Recall Development</h4>
+                            <ul>
+                                <li><strong>AI Chat:</strong> Press <code>Ctrl+L</code> (Windows) or <code>Cmd+L</code> (Mac) to open AI chat</li>
+                                <li><strong>Code Generation:</strong> Use <code>Ctrl+K</code> to generate code with AI</li>
+                                <li><strong>Inline Editing:</code> Select code and press <code>Ctrl+K</code> for AI-powered edits</li>
+                                <li><strong>Documentation:</strong> Ask AI about Recall Network APIs and best practices</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Structure -->
+                <div class="tutorial-step">
+                    <div class="step-header">
+                        <div class="step-number">3</div>
+                        <h3>Creating Project Structure</h3>
+                    </div>
+                    <div class="step-content">
+                        <p>Set up your Recall trading agent project structure in Cursor:</p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span>Project Structure</span>
+                            </div>
+                            <pre><code class="language-bash">recall-trading-agent/
+├── src/
+│   ├── agents/
+│   │   └── trading-agent.ts
+│   ├── tools/
+│   │   └── recall-trade.ts
+│   ├── strategies/
+│   │   └── trading-strategy.ts
+│   └── utils/
+│       └── helpers.ts
+├── tests/
+│   └── agent.test.ts
+├── package.json
+├── tsconfig.json
+└── .env</code></pre>
+                        </div>
+                        <div class="info-box">
+                            <h4>Cursor AI Tips</h4>
+                            <p>Use Cursor's AI chat to help create this structure:</p>
+                            <ul>
+                                <li>Ask: "Create a TypeScript project structure for a Recall Network trading agent"</li>
+                                <li>Use <code>Ctrl+K</code> to generate boilerplate code</li>
+                                <li>Let AI suggest imports and dependencies</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Building the Trading Agent -->
+                <div class="tutorial-step">
+                    <div class="step-header">
+                        <div class="step-number">4</div>
+                        <h3>Building Your Trading Agent</h3>
+                    </div>
+                    <div class="step-content">
+                        <p>Create your trading agent with Cursor's AI assistance:</p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span>src/agents/trading-agent.ts</span>
+                            </div>
+                            <pre><code class="language-typescript">import { RecallTradeTool } from '../tools/recall-trade';
+import { TradingStrategy } from '../strategies/trading-strategy';
+
+export class RecallTradingAgent {
+  private tradeTool: RecallTradeTool;
+  private strategy: TradingStrategy;
+  private isActive: boolean = false;
+
+  constructor(apiKey: string, apiUrl: string) {
+    this.tradeTool = new RecallTradeTool(apiKey, apiUrl);
+    this.strategy = new TradingStrategy();
+  }
+
+  async startTrading(): Promise<void> {
+    this.isActive = true;
+    console.log('🚀 Trading agent started...');
+    
+    while (this.isActive) {
+      try {
+        const signal = await this.strategy.analyzeMarket();
+        
+        if (signal.shouldTrade) {
+          await this.executeTrade(signal);
+        }
+        
+        // Wait before next analysis
+        await this.sleep(5000);
+      } catch (error) {
+        console.error('Trading error:', error);
+        await this.sleep(10000); // Wait longer on error
+      }
+    }
+  }
+
+  private async executeTrade(signal: any): Promise<void> {
+    const tradeParams = {
+      fromToken: signal.fromToken,
+      toToken: signal.toToken,
+      amount: signal.amount,
+      reason: signal.reason
+    };
+
+    const result = await this.tradeTool.executeTrade(tradeParams);
+    console.log('✅ Trade executed:', result);
+  }
+
+  private sleep(ms: number): Promise<void> {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+
+  stopTrading(): void {
+    this.isActive = false;
+    console.log('⏹️ Trading agent stopped');
+  }
+}</code></pre>
+                        </div>
+                        <div class="info-box">
+                            <h4>Cursor AI Development Workflow</h4>
+                            <p>Leverage Cursor's AI features for efficient development:</p>
+                            <ol>
+                                <li><strong>Code Generation:</strong> Use <code>Ctrl+K</code> to generate methods and classes</li>
+                                <li><strong>Error Fixing:</strong> Let AI suggest fixes for compilation errors</li>
+                                <li><strong>Code Explanation:</strong> Ask AI to explain complex trading logic</li>
+                                <li><strong>Optimization:</strong> Get AI suggestions for performance improvements</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trading Strategy -->
+                <div class="tutorial-step">
+                    <div class="step-header">
+                        <div class="step-number">5</div>
+                        <h3>Implementing Trading Strategy</h3>
+                    </div>
+                    <div class="step-content">
+                        <p>Create intelligent trading strategies with AI assistance:</p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span>src/strategies/trading-strategy.ts</span>
+                            </div>
+                            <pre><code class="language-typescript">interface MarketSignal {
+  shouldTrade: boolean;
+  fromToken: string;
+  toToken: string;
+  amount: string;
+  reason: string;
+  confidence: number;
+}
+
+export class TradingStrategy {
+  private readonly USDC = '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48';
+  private readonly WETH = '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2';
+  private readonly WBTC = '0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599';
+
+  async analyzeMarket(): Promise<MarketSignal> {
+    // Get market data (implement with your preferred data source)
+    const marketData = await this.getMarketData();
+    
+    // Simple moving average strategy
+    const smaSignal = this.calculateSMA(marketData);
+    
+    // RSI strategy
+    const rsiSignal = this.calculateRSI(marketData);
+    
+    // Combine signals
+    const combinedSignal = this.combineSignals(smaSignal, rsiSignal);
+    
+    return {
+      shouldTrade: combinedSignal.shouldTrade,
+      fromToken: combinedSignal.fromToken,
+      toToken: combinedSignal.toToken,
+      amount: combinedSignal.amount,
+      reason: combinedSignal.reason,
+      confidence: combinedSignal.confidence
+    };
+  }
+
+  private async getMarketData(): Promise<any> {
+    // Implement market data fetching
+    // This could connect to CoinGecko, CoinMarketCap, or Recall's data APIs
+    return {
+      prices: {},
+      volumes: {},
+      timestamps: []
+    };
+  }
+
+  private calculateSMA(data: any): any {
+    // Simple Moving Average calculation
+    // Use Cursor AI to help implement this logic
+    return { shouldTrade: false, confidence: 0 };
+  }
+
+  private calculateRSI(data: any): any {
+    // Relative Strength Index calculation
+    // Ask Cursor AI: "How do I implement RSI calculation for crypto trading?"
+    return { shouldTrade: false, confidence: 0 };
+  }
+
+  private combineSignals(sma: any, rsi: any): any {
+    // Combine multiple trading signals
+    // Use AI to help optimize signal combination logic
+    return {
+      shouldTrade: false,
+      fromToken: this.USDC,
+      toToken: this.WETH,
+      amount: '100',
+      reason: 'Combined signal analysis',
+      confidence: 0.5
+    };
+  }
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testing and Debugging -->
+                <div class="tutorial-step">
+                    <div class="step-header">
+                        <div class="step-number">6</div>
+                        <h3>Testing and Debugging with Cursor</h3>
+                    </div>
+                    <div class="step-content">
+                        <p>Use Cursor's AI features for comprehensive testing and debugging:</p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span>tests/agent.test.ts</span>
+                            </div>
+                            <pre><code class="language-typescript">import { RecallTradingAgent } from '../src/agents/trading-agent';
+import { TradingStrategy } from '../src/strategies/trading-strategy';
+
+describe('RecallTradingAgent', () => {
+  let agent: RecallTradingAgent;
+  
+  beforeEach(() => {
+    agent = new RecallTradingAgent('test-api-key', 'https://api.sandbox.competitions.recall.network');
+  });
+
+  test('should initialize correctly', () => {
+    expect(agent).toBeDefined();
+  });
+
+  test('should execute trades based on strategy signals', async () => {
+    // Mock the strategy to return a trade signal
+    const mockStrategy = {
+      analyzeMarket: jest.fn().mockResolvedValue({
+        shouldTrade: true,
+        fromToken: '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
+        toToken: '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
+        amount: '100',
+        reason: 'Test trade',
+        confidence: 0.8
+      })
+    };
+
+    // Test the agent's trading logic
+    // Use Cursor AI to help write comprehensive tests
+  });
+});</code></pre>
+                        </div>
+                        <div class="info-box">
+                            <h4>Cursor AI Testing Tips</h4>
+                            <ul>
+                                <li><strong>Test Generation:</strong> Ask AI to "Generate unit tests for my trading agent"</li>
+                                <li><strong>Mock Creation:</strong> Use <code>Ctrl+K</code> to create mock objects</li>
+                                <li><strong>Debug Assistance:</strong> Ask AI to explain test failures</li>
+                                <li><strong>Coverage Analysis:</strong> Let AI suggest additional test cases</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deployment -->
+                <div class="tutorial-step">
+                    <div class="step-header">
+                        <div class="step-number">7</div>
+                        <h3>Deploying Your Agent</h3>
+                    </div>
+                    <div class="step-content">
+                        <p>Deploy your trading agent with Cursor's assistance:</p>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span>package.json</span>
+                            </div>
+                            <pre><code class="language-json">{
+  "name": "recall-trading-agent",
+  "version": "1.0.0",
+  "description": "AI-powered trading agent for Recall Network",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "jest",
+    "deploy": "npm run build && npm start"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0",
+    "jest": "^29.0.0",
+    "@types/jest": "^29.0.0"
+  }
+}</code></pre>
+                        </div>
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span>Deployment Commands</span>
+                            </div>
+                            <pre><code class="language-bash"># Build the project
+npm run build
+
+# Start the trading agent
+npm start
+
+# For development with hot reload
+npm run dev
+
+# Run tests
+npm test</code></pre>
+                        </div>
+                        <div class="info-box">
+                            <h4>Cursor AI Deployment Help</h4>
+                            <p>Use Cursor's AI to optimize your deployment:</p>
+                            <ul>
+                                <li>Ask: "How do I deploy a Node.js trading bot to production?"</li>
+                                <li>Get AI suggestions for environment configuration</li>
+                                <li>Let AI help with Docker containerization</li>
+                                <li>Use AI to create deployment scripts</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
