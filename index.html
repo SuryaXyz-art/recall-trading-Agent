@@ -20,6 +20,7 @@
             </div>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#building-agent" class="nav-link">Building Agent</a></li>
                 <li><a href="#tutorial" class="nav-link">Mastra Tutorial</a></li>
                 <li><a href="#cursor-tutorial" class="nav-link">Cursor Tutorial</a></li>
                 <li><a href="#competitions" class="nav-link">Competitions</a></li>
@@ -41,6 +42,7 @@
                 <h1 class="hero-title">Build Your Trading Agent for Recall Network</h1>
                 <p class="hero-subtitle">Learn to create AI-powered trading agents using Mastra framework or Cursor IDE and compete in decentralized trading competitions</p>
                 <div class="hero-buttons">
+                    <a href="#building-agent" class="btn btn-primary">Start Building</a>
                     <a href="#tutorial" class="btn btn-primary">Mastra Tutorial</a>
                     <a href="#cursor-tutorial" class="btn btn-primary">Cursor Tutorial</a>
                     <a href="https://app.recall.network/competitions" target="_blank" class="btn btn-secondary">View Competitions</a>
@@ -375,6 +377,222 @@ export const mastra = new Mastra({
                             <p>Try commands like: <code>"Buy $10 worth of Ether"</code> to test your trading agent.</p>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Building Your Trading Agent Section -->
+    <section id="building-agent" class="building-agent">
+        <div class="container">
+            <div class="section-header">
+                <h2>Building Your Trading Agent</h2>
+                <p>Follow this step-by-step guide to create your first Recall Network trading agent using the Cursor and Mastra frameworks</p>
+            </div>
+
+            <div class="framework-comparison">
+                <div class="comparison-card">
+                    <div class="framework-header">
+                        <div class="framework-icon">🚀</div>
+                        <h3>Mastra Framework</h3>
+                        <p>Official Recall Network framework</p>
+                    </div>
+                    <div class="framework-features">
+                        <ul>
+                            <li>✅ Built-in agent management</li>
+                            <li>✅ Workflow orchestration</li>
+                            <li>✅ Dashboard integration</li>
+                            <li>✅ Official documentation</li>
+                        </ul>
+                    </div>
+                    <a href="#tutorial" class="btn btn-outline">Start Mastra Tutorial</a>
+                </div>
+
+                <div class="comparison-card">
+                    <div class="framework-header">
+                        <div class="framework-icon">🤖</div>
+                        <h3>Cursor IDE</h3>
+                        <p>AI-powered development environment</p>
+                    </div>
+                    <div class="framework-features">
+                        <ul>
+                            <li>✅ AI code completion</li>
+                            <li>✅ Smart debugging</li>
+                            <li>✅ Rapid prototyping</li>
+                            <li>✅ Custom implementations</li>
+                        </ul>
+                    </div>
+                    <a href="#cursor-tutorial" class="btn btn-outline">Start Cursor Tutorial</a>
+                </div>
+            </div>
+
+            <div class="unified-workflow">
+                <h3>Unified Development Workflow</h3>
+                <div class="workflow-steps">
+                    <div class="workflow-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Choose Your Framework</h4>
+                            <p>Select between Mastra (official) or Cursor (AI-powered) based on your development preferences</p>
+                        </div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Set Up Development Environment</h4>
+                            <p>Install required tools, API keys, and configure your development environment</p>
+                        </div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Create Trading Logic</h4>
+                            <p>Implement market analysis, trading strategies, and decision-making algorithms</p>
+                        </div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Test & Debug</h4>
+                            <p>Use sandbox environment to test your agent and debug any issues</p>
+                        </div>
+                    </div>
+                    <div class="workflow-step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h4>Deploy & Compete</h4>
+                            <p>Deploy your agent and join live trading competitions on Recall Network</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quick-start-guide">
+                <h3>Quick Start Guide</h3>
+                <div class="guide-tabs">
+                    <button class="tab-button active" onclick="showTab('mastra-quick')">Mastra Quick Start</button>
+                    <button class="tab-button" onclick="showTab('cursor-quick')">Cursor Quick Start</button>
+                </div>
+
+                <div id="mastra-quick" class="tab-content active">
+                    <div class="quick-steps">
+                        <div class="quick-step">
+                            <h4>1. Install Mastra</h4>
+                            <div class="code-block">
+                                <pre><code class="language-bash">npm create mastra@latest recall-bot
+cd recall-bot</code></pre>
+                            </div>
+                        </div>
+                        <div class="quick-step">
+                            <h4>2. Add Trading Tool</h4>
+                            <div class="code-block">
+                                <pre><code class="language-typescript">// Create src/mastra/tools/recall-trade.ts
+export const recallTrade = createTool({
+  id: "recall-trade",
+  description: "Execute trades on Recall Network",
+  // ... implementation
+});</code></pre>
+                            </div>
+                        </div>
+                        <div class="quick-step">
+                            <h4>3. Create Agent</h4>
+                            <div class="code-block">
+                                <pre><code class="language-typescript">// Create src/mastra/agents/recall-agent.ts
+export const recallAgent = new Agent({
+  name: "Recall Agent",
+  instructions: "You are a trading agent...",
+  tools: { recallTrade }
+});</code></pre>
+                            </div>
+                        </div>
+                        <div class="quick-step">
+                            <h4>4. Test & Deploy</h4>
+                            <div class="code-block">
+                                <pre><code class="language-bash">npm run dev
+# Visit http://localhost:4111/agents/recallAgent/chat</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="cursor-quick" class="tab-content">
+                    <div class="quick-steps">
+                        <div class="quick-step">
+                            <h4>1. Set Up Cursor Project</h4>
+                            <div class="code-block">
+                                <pre><code class="language-bash">mkdir recall-trading-agent
+cd recall-trading-agent
+npm init -y
+npm install axios dotenv</code></pre>
+                            </div>
+                        </div>
+                        <div class="quick-step">
+                            <h4>2. Create Trading Agent Class</h4>
+                            <div class="code-block">
+                                <pre><code class="language-typescript">// Use Cursor AI (Ctrl+K) to generate
+export class RecallTradingAgent {
+  async startTrading(): Promise<void> {
+    // AI-assisted implementation
+  }
+}</code></pre>
+                            </div>
+                        </div>
+                        <div class="quick-step">
+                            <h4>3. Implement Trading Strategy</h4>
+                            <div class="code-block">
+                                <pre><code class="language-typescript">// Ask Cursor AI: "Create a trading strategy class"
+export class TradingStrategy {
+  async analyzeMarket(): Promise<MarketSignal> {
+    // AI-generated market analysis
+  }
+}</code></pre>
+                            </div>
+                        </div>
+                        <div class="quick-step">
+                            <h4>4. Test & Deploy</h4>
+                            <div class="code-block">
+                                <pre><code class="language-bash">npm run build
+npm start
+# Your agent is now running!</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="best-practices">
+                <h3>Best Practices for Trading Agents</h3>
+                <div class="practices-grid">
+                    <div class="practice-card">
+                        <div class="practice-icon">🛡️</div>
+                        <h4>Risk Management</h4>
+                        <p>Implement proper risk controls, position sizing, and stop-loss mechanisms</p>
+                    </div>
+                    <div class="practice-card">
+                        <div class="practice-icon">📊</div>
+                        <h4>Market Analysis</h4>
+                        <p>Use multiple indicators and data sources for robust market analysis</p>
+                    </div>
+                    <div class="practice-card">
+                        <div class="practice-icon">⚡</div>
+                        <h4>Performance Optimization</h4>
+                        <p>Optimize for speed and efficiency in your trading algorithms</p>
+                    </div>
+                    <div class="practice-card">
+                        <div class="practice-icon">🧪</div>
+                        <h4>Testing Strategy</h4>
+                        <p>Thoroughly test your agent in sandbox before live trading</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="next-steps">
+                <h3>Ready to Start Building?</h3>
+                <p>Choose your preferred development approach and follow the detailed tutorials below</p>
+                <div class="next-steps-buttons">
+                    <a href="#tutorial" class="btn btn-primary">Mastra Framework Tutorial</a>
+                    <a href="#cursor-tutorial" class="btn btn-primary">Cursor IDE Tutorial</a>
+                    <a href="https://app.recall.network/competitions" target="_blank" class="btn btn-secondary">Join Competition</a>
                 </div>
             </div>
         </div>
